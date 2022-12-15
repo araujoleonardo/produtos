@@ -26,7 +26,7 @@ class ProdutosController extends Controller
      */
     public function create()
     {
-        //return view('create');
+        //
     }
 
     /**
@@ -50,14 +50,7 @@ class ProdutosController extends Controller
      */
     public function show($id)
     {
-        /*
-        $produto = Produtos::find($id);
-        if(!$produto){
-            return redirect()->route('produtos.index');
-        }
-
-        return view('show', compact('produto'));
-        */
+        //
     }
 
     /**
@@ -68,12 +61,7 @@ class ProdutosController extends Controller
      */
     public function edit($id)
     {
-        $produto = Produtos::find($id);
-        if(!$produto){
-            return redirect()->route('produtos.index');
-        }
-
-        return view('edit', compact('produto'));
+        //
     }
 
     /**
@@ -86,9 +74,6 @@ class ProdutosController extends Controller
     public function update(Request $request, $id)
     {
         $produto = Produtos::find($id);
-        if(!$produto){
-            return redirect()->route('produtos.index');
-        }
 
         $data = $request->only('name', 'price', 'quantity');
 
